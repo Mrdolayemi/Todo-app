@@ -6,14 +6,6 @@ const todoItem = document.querySelector("#todo-list");
 let todos = JSON.parse(localStorage.getItem("todosl")) || [];
 let editName;
 
-let arr = [10, 2, 3, 4, 5];
-
-let sorttodo = arr.sort(function (a, b) {
-  return b - a;
-});
-
-console.log(todos, sorttodo);
-
 //   Setting Usename to Local storage
 nameInput.addEventListener("change", (e) => {
   localStorage.setItem("username", e.target.value);
